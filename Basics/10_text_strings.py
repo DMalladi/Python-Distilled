@@ -1,7 +1,3 @@
-# Text Strings
-from typing import Concatenate
-
-
 single_quote_message = "Hello World!!!"
 print(single_quote_message)
 
