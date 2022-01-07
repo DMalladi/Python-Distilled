@@ -25,15 +25,13 @@ s6 = s1[1:3] # [2, 3]
 s7 = s1[:2] # [1, 2]
 s8 = s1[::-1] # [4, 3, 2, 1]
 s9 = s1[::2] # [1, 3]
-
-print(s5)
-print(s6)
-print(s7)
-print(s8)
-print(s9)
-print(s4)
-
  
+# Fancy slices may result in code that is hard to understand later, 
+# Slices can be named using slice()
+items = [1, 2, 3, 4, 5, 6]
+first_two_items = slice(0, 2)
+items[first_two_items] # [1, 2]
+
 # string
 first_name = "Deeraj"
 last_name = "Malladi"
@@ -45,3 +43,6 @@ t1 = (1, 2, 3, 4)
 t2 = (5, 6)
 t3 = t1 + t2
 t4 = 2 * t2 # (5, 6, 5, 6)
+
+
+
