@@ -84,3 +84,30 @@ from copy import copy, deepcopy
 dc_names = deepcopy(names)
 dc_names[1].append("Renduchintalas")
 print(names) # ['Deeraj', ['Revanth', 'Deepthi', 'Sahasra']]
+
+# In Python all objects are said to be First-Class objects
+# This means that all objects that can be assigned to a name can be treated as a
+# data, e.g.
+items = {
+    "number" : 42,
+    "text" : "Hello World" 
+}
+
+# First-class nature of objects can be seen by adding some unusual
+# items to this dictionary
+
+items["abs"] = abs
+import math
+items["math"] = math
+items["error"] = ValueError
+nums = [1, 2, 3, 4]
+items['append'] = nums.append
+
+print(items["abs"](-50)) # 50
+print(items["math"].sqrt(4)) # 16
+
+# Use None for optional or missing data
+# Comman ways to test the None is to use "is" Operator,
+# e.g. if value is None: 
+# Testing None using the "==" operator will also works, but not recommended
+# and might be flagged as a style error by code-checking tools

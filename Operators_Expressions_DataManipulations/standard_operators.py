@@ -44,32 +44,32 @@ class CustomMath:
     def __init__(self, num: int) -> None:
         self.num = num
     
-    def __add__(self, __other: object) -> object:
-        return CustomMath(self.num + __other.num)
+    def __add__(self, other: object) -> object:
+        return CustomMath(self.num + other.num)
 
-    def __eq__(self, __other: object) -> bool:
-        return self.num == __other.num
+    def __eq__(self, other: object) -> bool:
+        return self.num == other.num
 
-    def __sub__(self, __other: object) -> object:
-        return CustomMath(self.num - __other.num)
+    def __sub__(self, other: object) -> object:
+        return CustomMath(self.num - other.num)
 
-    def __mul__(self, __other: object) -> object:
-        return CustomMath(self.num * __other.num)
+    def __mul__(self, other: object) -> object:
+        return CustomMath(self.num * other.num)
 
-    def __truediv__(self, __other: object) -> object:
-      return CustomMath(self.num / __other.num)
+    def __truediv__(self, other: object) -> object:
+      return CustomMath(self.num / other.num)
 
-    def __floordiv__(self, __other: object) -> object:
-        return CustomMath(self.num // __other.num)
+    def __floordiv__(self, other: object) -> object:
+        return CustomMath(self.num // other.num)
 
-    def __mod__(self, __other: object) -> object:
-        return CustomMath(self.num % __other.num)
+    def __mod__(self, other: object) -> object:
+        return CustomMath(self.num % other.num)
 
-    def __divmod__(self, __other: object) -> object:
-        return (self.num / __other.num, self.num % __other.num)
+    def __divmod__(self, other: object) -> object:
+        return (self.num / other.num, self.num % other.num)
 
-    def __pow__(self, __other: object) -> object:
-        return CustomMath(self.num ** __other.num)
+    def __pow__(self, other: object) -> object:
+        return CustomMath(self.num ** other.num)
 
     def __abs__(self) -> object:
         return CustomMath(abs(self.num))
